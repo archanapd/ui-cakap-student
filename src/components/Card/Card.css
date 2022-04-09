@@ -1,0 +1,16 @@
+.container {
+  border-radius: 8px;
+  box-shadow: "0 4px 5px 0 rgba(0, 0, 0, 0.14);";
+  margin: "0 32px 16px";
+  background-color: "#ffffff";
+}
+
+.audio {
+  background-color: paleturquoise;
+  border: 1px solid darkturquoise;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
