@@ -3,10 +3,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 
 import Player from "components/Audio/AudioPlayer";
 import RadioButtonsGroup from "components/RadioButton/RadioButtonsGroup";
+import ImageList from "components/ImageList/ImageListGroup";
 import "./Card.css";
 const cardImage = require("../../assets/earth-space.jpeg");
 const url = require("../../assets/audio/audio_example.mp3");
@@ -31,6 +32,7 @@ export default function ActionAreaCard() {
 
         <Grid>
           <RadioButtonsGroup />
+          <ImageList />
         </Grid>
       </CardContent>
       {/* </CardActionArea> */}

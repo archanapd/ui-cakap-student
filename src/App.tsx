@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import RadioButtonsGroup from "./components/RadioButton/RadioButtonsGroup";
-import Card from "./components/Card/Card";
+import SingleSelect from "./components/SingleSelect/SingleSelectComponent";
 
 function App() {
   return (
     <div className="App">
       <div style={{ margin: 24 }}>
-        <Card />
+        <SingleSelect />
       </div>
     </div>
   );
