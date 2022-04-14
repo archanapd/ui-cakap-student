@@ -2,7 +2,7 @@
   "name": "ui-cakap-student",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ui-cakap-student/",
+  "homepage": "https://archanapd.github.io/ui-cakap-student/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
