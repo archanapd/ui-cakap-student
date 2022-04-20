@@ -1,3 +1,7 @@
 .App {
   text-align: center;
 }
+
+.MuiContainer-maxWidthLg {
+  margin-bottom: 120px;
+}

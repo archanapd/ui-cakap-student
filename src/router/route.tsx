@@ -1,5 +1,5 @@
 import Home from "components/Home/Home";
-import QuestionContainer from "components/QuestionContainer/Question";
+import QuestionWrapper from "components/shared/QuestionWrapper";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const AppRouter = (props: any) => {
@@ -8,7 +8,7 @@ const AppRouter = (props: any) => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ui-cakap-student" element={<Home />} />
-        <Route path="/questions/:questionId" element={<QuestionContainer />} />
+        <Route path="/questions/:questionId" element={<QuestionWrapper />} />
         <Route
           path="*"
           element={

@@ -6,7 +6,7 @@ let axiosInstance = axios.create({
   },
 });
 
-export const callApi = ({
+export const getJSON = ({
   method,
   resource,
   data = {},
