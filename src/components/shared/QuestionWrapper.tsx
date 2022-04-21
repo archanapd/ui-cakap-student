@@ -125,7 +125,7 @@ const QuestionWrapper = () => {
   const handlePrevClick = () => {
     if (component > 0) {
       component = component - 1;
-      navigate("/ui-cakap-student/questions/"+component);
+      navigate("/questions/"+component);
     }
     setComponent(component);
   }
@@ -133,7 +133,7 @@ const QuestionWrapper = () => {
   const handleNextClick = () => {
     if (component < questions.length-1) {
       component = component + 1;
-      navigate("/ui-cakap-student/questions/"+component);
+      navigate("/questions/"+component);
     }
     setComponent(component);
   }
