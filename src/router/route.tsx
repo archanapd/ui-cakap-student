@@ -5,12 +5,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const AppRouter = (props: any) => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/ui-cakap-student">
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/ui-cakap-student" element={<Home />} />
-        <Route path="/questions/:questionId" element={<QuestionWrapper />} />
-        <Route path="/submit" element={<SubmitWrapper />} />
+        <Route path="/ui-cakap-student/questions/:questionId" element={<QuestionWrapper />} />
+        <Route path="/ui-cakap-student/submit" element={<SubmitWrapper />} />
         <Route
           path="*"
           element={

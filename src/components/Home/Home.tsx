@@ -16,7 +16,7 @@ function App() {
   let [component, setComponent] = React.useState(0);
   
   const handleNextClick = () => {
-    navigate("/questions/"+component);
+    navigate("/ui-cakap-student/questions/"+component);
   }
   
   return (
