@@ -26,7 +26,7 @@ function App() {
           {component === 0 && (
             <img
               height="500px"
-              src="https://i.pinimg.com/736x/79/b2/13/79b213aff2e98fa6412100c47b6304f0--quizes-screens.jpg"
+              src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/9fc43ef159a1d8067b1c8cbcc2f9e0fb.jpg"
             ></img>
           )}
 
