@@ -1,11 +1,11 @@
 import Home from "components/Home/Home";
 import QuestionWrapper from "components/shared/QuestionWrapper";
 import SubmitWrapper from "components/shared/SubmitWrapper";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Routes } from "react-router-dom";
 
 const AppRouter = (props: any) => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/ui-cakap-student" element={<Home />} />
@@ -20,7 +20,7 @@ const AppRouter = (props: any) => {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
