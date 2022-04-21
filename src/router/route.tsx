@@ -7,7 +7,7 @@ const AppRouter = (props: any) => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="" element={<Home />} />
         <Route path="/ui-cakap-student" element={<Home />} />
         <Route path="/questions/:questionId" element={<QuestionWrapper />} />
         <Route path="/submit" element={<SubmitWrapper />} />

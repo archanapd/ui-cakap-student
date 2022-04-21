@@ -13,7 +13,11 @@ import { useNavigate } from "react-router-dom";
 
 const url = require("../..//assets/audio/audio_example.mp3");
 
-const QuestionWrapper = (props:any) => {
+const QuestionWrapper = () => {
+  let navigate = useNavigate();
+  const { questionId } = useParams<{ questionId: string }>();
+  let [component, setComponent] = React.useState(Number(questionId));
+
   const questions = [
     {
       type: "radio",
@@ -118,13 +122,8 @@ const QuestionWrapper = (props:any) => {
     },
   ];
 
-  const { questionId } = useParams<{ questionId: string }>();
-  let navigate = useNavigate();
-
-  let [component, setComponent] = React.useState(Number(questionId));
-  
   const handlePrevClick = () => {
-    if (component >= 1) {
+    if (component > 0) {
       component = component - 1;
       navigate("/questions/"+component);
     }
