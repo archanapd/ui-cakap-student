@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ui-cakap-student/static/css/main.624ffbc1.css",
-    "main.js": "/ui-cakap-student/static/js/main.3386447b.js",
+    "main.js": "/ui-cakap-student/static/js/main.bb68e784.js",
     "static/js/787.11706f87.chunk.js": "/ui-cakap-student/static/js/787.11706f87.chunk.js",
     "static/media/audio_example.mp3": "/ui-cakap-student/static/media/audio_example.8d14102f3e5d724f1908.mp3",
     "index.html": "/ui-cakap-student/index.html",
     "main.624ffbc1.css.map": "/ui-cakap-student/static/css/main.624ffbc1.css.map",
-    "main.3386447b.js.map": "/ui-cakap-student/static/js/main.3386447b.js.map",
+    "main.bb68e784.js.map": "/ui-cakap-student/static/js/main.bb68e784.js.map",
     "787.11706f87.chunk.js.map": "/ui-cakap-student/static/js/787.11706f87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.624ffbc1.css",
-    "static/js/main.3386447b.js"
+    "static/js/main.bb68e784.js"
   ]
 }
