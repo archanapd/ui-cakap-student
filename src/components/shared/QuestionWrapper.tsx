@@ -21,6 +21,110 @@ const QuestionWrapper = () => {
 
   const questions = [
     {
+      type: 'image',
+      mode: 'single',
+      title: "Select single images.",
+      images: [
+        {
+          img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+          title: 'Breakfast',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+          title: 'Burger',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+          title: 'Camera',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+          title: 'Coffee',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+          title: 'Hats',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+          title: 'Honey',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+          title: 'Basketball',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+          title: 'Fern',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+          title: 'Mushrooms',
+          selected: false
+        },
+      ]
+    },
+    {
+      type: 'image',
+      mode: 'multi',
+      title: "Select multiple images.",
+      images: [
+        {
+          img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+          title: 'Breakfast',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+          title: 'Burger',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+          title: 'Camera',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+          title: 'Coffee',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+          title: 'Hats',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+          title: 'Honey',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+          title: 'Basketball',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+          title: 'Fern',
+          selected: false
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+          title: 'Mushrooms',
+          selected: false
+        },
+      ]
+    },
+    {
       type: "radio",
       image:
         "https://h5p.org/sites/default/files/h5p/content/713/images/file-5885c23902f31.jpg",
@@ -120,59 +224,7 @@ const QuestionWrapper = () => {
       '<p> * berries (Rubus chamaemorus) are edible orange berries similar to raspberries or blackberries found in alpine and arctic tundra.</p>' +
       '<p>Redcurrant (Ribes rubrum) are red translucent berries with a diameter of 8~10 mm, and are closely related to its black colored relative * currant.</p>',
     
-    },
-    {
-      type: 'image',
-      mode: 'single',
-      title: "Select images.",
-      images: [
-        {
-          img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-          title: 'Breakfast',
-          selected: false
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-          title: 'Burger',
-          selected: false
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-          title: 'Camera',
-          selected: false
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-          title: 'Coffee',
-          selected: false
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-          title: 'Hats',
-          selected: false
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-          title: 'Honey',
-          selected: false
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-          title: 'Basketball',
-          selected: false
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-          title: 'Fern',
-          selected: false
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-          title: 'Mushrooms',
-          selected: false
-        },
-      ]
-    },
+    }
   ];
 
   const handlePrevClick = () => {
