@@ -123,7 +123,8 @@ const QuestionWrapper = () => {
     },
     {
       type: 'image',
-      mode: 'multiple',
+      mode: 'single',
+      title: "Select images.",
       images: [
         {
           img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
@@ -170,9 +171,7 @@ const QuestionWrapper = () => {
           title: 'Mushrooms',
           selected: false
         },
-      ],
-      audio: url,
-      title: "Select images.",
+      ]
     },
   ];
 
