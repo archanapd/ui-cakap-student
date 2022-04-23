@@ -13,7 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   let navigate = useNavigate();
 
-  let [component, setComponent] = React.useState(0);
+  let [component] = React.useState(1);
   
   const handleNextClick = () => {
     navigate("/questions/"+component);
