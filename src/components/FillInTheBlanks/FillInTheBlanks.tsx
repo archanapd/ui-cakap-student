@@ -10,9 +10,14 @@ const formatLabel = (props: any, text: any) => {
     queryString = text.replace(/\*/g, '<input class="text-replacer" type="text"/>');
   } else {
     // queryString = text.replace(/\*/g, addSelect(props.options));
-    const mapObj = props.options.options;
-    queryString = text.replace(/\b(?:books|colors|numbers)\b/gi, (matched: any) => addSelect(matched, props));
+    // queryString = text.replace(/\b(?:books|colors|numbers)\b/gi, (matched: any) => addSelect(matched, props));
+    let keys = Object.keys(props.options.options);
+    queryString = text;
+    keys.forEach(key => {
+      queryString = queryString.replace(key, addSelect(key, props));
+    });
   }
+  
   return queryString;
 };
 
