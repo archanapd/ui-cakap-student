@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react'
+import {useState} from 'react'
 import CssBaseline from '@mui/material/CssBaseline';
 import {Container, Grid} from "@mui/material";
 import ImageList from '@mui/material/ImageList';
@@ -12,21 +12,21 @@ export default function ImageSelection(props: any) {
   let [singleSelection, setSingleSelection] = useState<string>("");
   const [multiSelection, setMultiSelection] = useState<string[]>([]);
 
-    const imageClicked = (event: any) => {
-      if(props.options.mode === 'single') {
-        singleSelection = event.target.dataset.src;
-        setSingleSelection(singleSelection);
-      } else if(props.options.mode === 'multi') {
-        const indx = multiSelection.indexOf(event.target.dataset.src);
+  const imageClicked = (event: any) => {
+    if (props.options.mode === 'single') {
+      singleSelection = event.target.dataset.src;
+      setSingleSelection(singleSelection);
+    } else if (props.options.mode === 'multi') {
+      const indx = multiSelection.indexOf(event.target.dataset.src);
+      setMultiSelection(multiSelection.filter(check => check !== event.target.dataset.src));
+      if (indx === -1) {
+        setMultiSelection([...multiSelection, event.target.dataset.src]);
+      } else {
         setMultiSelection(multiSelection.filter(check => check !== event.target.dataset.src));
-        if (indx === -1) {
-          setMultiSelection([...multiSelection, event.target.dataset.src]);
-        } else {
-          setMultiSelection(multiSelection.filter(check => check !== event.target.dataset.src));
-        }
       }
-        
-    };
+    }
+
+  };
 
 
   return (
